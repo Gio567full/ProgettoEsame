@@ -1,0 +1,5 @@
+TomCat 10.1.33 : https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.33/bin/apache-tomcat-10.1.33.zip
+Eclipse: https://www.eclipse.org/downloads/packages/
+Jbcrypt: http://www.java2s.com/Code/JarDownload/jbcrypt/jbcrypt.jar.zip
+MySQL Connector 9.1.0: https://dev.mysql.com/downloads/file/?id=534782
+Xampp: https://www.apachefriends.org/it/index.html

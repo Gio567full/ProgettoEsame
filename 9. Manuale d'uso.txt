@@ -1,0 +1,99 @@
+Manuale d'uso per il progetto:
+
+Ecco alcune coordinate che puoi usare subito come test:
+Partecipante: mario.rossi@gmail.com Password: password123
+Cuoco: anna.neri@gmail.com Password: cuocopass
+Amministratore: giovanni.verdi@gmail.com Password: adminpass
+
+Altrimenti segui questi procedimenti per l'installazione da 0
+
+Installazione e Configurazione del Progetto:
+
+1. Installazione di XAMPP:
+
+-Scarica e Installa XAMPP
+Vai al sito ufficiale di XAMPP: https://www.apachefriends.org/index.html
+Seleziona la versione di XAMPP compatibile con il tuo sistema operativo (Windows, macOS, Linux) e scarica il pacchetto.
+Avvia il file di installazione e segui le istruzioni di installazione.
+
+-Avvia i Servizi Apache e MySQL:
+Una volta installato XAMPP, apri il XAMPP Control Panel.
+Avvia Apache (server web) e MySQL (database) cliccando su Start accanto a ciascun servizio.
+Se i servizi sono attivi, dovresti vedere i rispettivi indicatori verdi.
+
+-Verifica l'installazione:
+Apri il browser e vai su http://localhost/ per verificare che il server Apache stia funzionando correttamente.
+Vai su http://localhost/phpmyadmin/ per accedere a phpMyAdmin, il tool di gestione del database, se visualizzi la pagina di benvenuto vuol dire che l'installazione è avvenuta in maniera corretta.
+
+2. Installazione di Eclipse IDE:
+
+-Scarica e Installa Eclipse:
+Vai al sito ufficiale di Eclipse: https://www.eclipse.org/downloads/
+Scarica la versione di Eclipse IDE for Java Developers.
+Installa Eclipse seguendo le istruzioni di installazione.
+
+-Configurazione di Eclipse
+Una volta completata l'installazione, avvia Eclipse.
+Nella schermata iniziale, seleziona una workspace dove desideri salvare i tuoi progetti.
+Seleziona File > Open Project from file System > in Directory seleziona la cartella che contiene la cartella eclipse-workspace che trovi in allegato.
+In questo modo dovresti visualizzare interamente tutte le cartelle e i file di progetto necessari per l'uso dell'applicativo.
+
+-Configurazione del Database con XAMPP
+Creazione del Database
+Vai su http://localhost/phpmyadmin/ nel browser.
+Clicca su Database nel menu principale e crea un nuovo database chiamato cucina_corso (puoi usare un altro nome se preferisci).
+Esegui gli script SQL per creare le tabelle necessarie per il progetto. Puoi utilizzare il file SQL lasciato in allegato per importare velocemente tutte le tabelle correttamente o inviare il comando tramite apposita sezione SQL per importarlo allo stesso modo.
+
+-Verifica la Connessione al Database
+Verifica che le tabelle siano state create correttamente e che i dati siano presenti utilizzando phpMyAdmin.
+
+
+3. Configurazione di Eclipse per il Progetto Web
+
+-Clicca con il tasto destro sul nome del progetto (Progetto Esame) e vai in Properties. Nella sezione Target Runtime, seleziona Apache Tomcat e clicca su finish (se non hai mai configurato TomCat, vedi il passaggio successivo).
+
+- Configura Apache Tomcat in Eclipse
+Se non hai Apache Tomcat configurato, vai su Window > Preferences > Server > Runtime Environments.
+Clicca su Add External Server e seleziona il percorso dove hai scaricato Tomcat (seleziona la cartella che ti lascio in allegato).
+Aggiungi Tomcat come runtime e fai clic su OK. A questo punto dovresti visualizzare in basso una nuova locandina chiamata server.
+Seleziona il server con il tasto destro, clicca su ADD and Remove e aggiungi il Progetto.
+
+-Aggiungi le librerie necessarie:
+Scarica il file mysql-connector-java-9.1.0.jar da https://dev.mysql.com/downloads/connector/j/ oppure usa il file che ti lascio in allegato.
+Aggiungi il file JAR a Eclipse come segue:
+Vai al tuo progetto in Project Explorer.
+Clicca con il tasto destro sul progetto e seleziona Build Path > Add External Archives.
+Seleziona il file mysql-connector-java-9.1.0.jar e clicca su Open nella sezione Order e Export.
+Vai nella sezione Libraries e attiva tutte le librerie.
+Applica ed Esci.
+
+4. Esecuzione del Progetto:
+
+-Avvia il Server Tomcat:
+Clicca con il tasto destro sul progetto in Project Explorer e seleziona Run on Server.
+Scegli Tomcat e avvia il server.
+
+-Verifica il Funzionamento del Progetto
+Accedi a http://localhost:8080/ProgettoEsame per vedere l'applicazione in esecuzione.
+Verrai indirizzato alla pagina di homepage dove potrai effettuare la registrazione o il login.
+Ecco alcune coordinate che puoi usare come test:
+Partecipante: mario.rossi@gmail.com Password: password123
+Cuoco: anna.neri@gmail.com Password: cuocopass
+Amministratore: giovanni.verdi@gmail.com Password: adminpass
+
+-Prova a registrarti, fare login e prenotare un laboratorio.
+-Prova a cancellare delle prenotazioni con un amministratore
+-Prova ad aggiungere lezioni con un cuoco.
+
+Puoi muoverti facilmente con la navBar su ogni pagina.
+
+
+5.Problemi Comuni e Risoluzioni:
+
+-Problemi di Connessione al Database
+Verifica che MySQL sia in esecuzione nel pannello di controllo di XAMPP.
+Assicurati che il database e le tabelle siano state creati correttamente.
+-Errore ClassNotFoundException
+Assicurati di aver aggiunto il connettore MySQL JAR alla cartella lib e al Build Path di Eclipse.
+-Pagina non trovata (404 Error)
+Verifica il corretto percorso del progetto, specialmente il nome della cartella del progetto in Eclipse.
