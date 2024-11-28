@@ -75,6 +75,3 @@ Il progetto permette di prenotare laboratori di cucina, gestire cuochi, partecip
 
 ### **Pagina non trovata (404 Error)**
 - Verifica il percorso del progetto, assicurandoti che il nome della cartella sia corretto.
-
-## **Licenza**
-Questo progetto è distribuito con licenza MIT. Per maggiori dettagli, consulta il file LICENSE.
